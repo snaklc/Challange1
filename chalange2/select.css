@@ -1,0 +1,54 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.select-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.select> span{
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid grey;
+    margin: 20px;
+    cursor:pointer;
+}
+
+#cicek:focus > #ul1 {
+    display: block;
+
+}
+
+#bocek:focus > #ul2{
+    display: block;
+}
+
+li{
+    list-style:none;
+    border-top: 1px solid grey;
+    padding: 3px;
+}
+
+li:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+
+ul{
+    display: none;
+    width: 109px;
+    border: 1px solid grey;
+    border-top: 0;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    padding: 0;
+    margin-left: 20px;
+    top:43px;
+}

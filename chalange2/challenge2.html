@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <link rel="stylesheet" href="radio.css">
+
+    <title>Challenge 2</title>
+
+    <script type="text/javascript">
+
+        function selectCicek() {
+            let selectedCicek = document.getElementById('cicek-sec');
+            selectedCicek.innerHTML = event.target.innerHTML;
+        }
+
+        function selectBocek(event) {
+            let selectedBocek = document.getElementById('bocek-sec');
+            let ul2 = document.getElementById('ul2');
+            selectedBocek.innerHTML = event.target.innerHTML;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="select-list">
+        <div id="cicek" class="select" tabindex="0">
+            <span id="cicek-sec">Çiçek Seçiniz</span>
+            <ul id="ul1" onclick="selectCicek(event)">
+                <li>Çiçek Seçiniz</li>
+                <li>Lale</li>
+                <li>Gül</li>
+                <li>Fil</li>
+            </ul>
+        </div>
+        <div id="bocek" class="select" tabindex="0">
+            <span id="bocek-sec">Böcek Seçiniz</span>
+            <ul id="ul2" onclick="selectBocek(event)">
+                <li>Böcek Seçiniz</li>
+                <li>Karınca</li>
+                <li>Sinek</li>
+                <li>Sivri</li>
+                <li>Fil</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="checkbox-list">
+        <label class="switch">
+            <div class="text">Okudum, onaylıyorum</div>
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <hr>
+    <div class="radio-list">
+          <label class="container">
+            <input type="radio" name="renk" value="yesil">
+            <span class="checkmark" style="background-color: green;"></span>
+          </label>
+          <label class="container">
+            <input type="radio" name="renk">
+            <span class="checkmark" style="background-color: red;"></span>
+          </label>
+          <label class="container">
+            <input type="radio" name="renk">
+            <span class="checkmark" style="background-color: blue;"></span>
+          </label>
+          <label class="container">
+            <input type="radio" name="renk">
+            <span class="checkmark" style="background-color: black;"></span>
+          </label>
+          <div></div>
+          
+    </div>
+    <!-- <script src='challenge2.js'></script> -->
+
+</body>
+
+</html>
